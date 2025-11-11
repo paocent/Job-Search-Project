@@ -18,7 +18,7 @@ export default function Menu() {
         <AppBar position="static">
             <Toolbar sx={{ display: "flex", gap: 2, alignItems: "center" }}>
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                    MERN Skeleton
+                    Job Tracker
                 </Typography>
 
                 <Link to="/">

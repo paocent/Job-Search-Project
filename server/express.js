@@ -10,6 +10,7 @@ import contactsRoutes from './routes/contacts.routes.js'  
 import educationRoutes from './routes/education.routes.js'
 import projectsRoutes from './routes/project.routes.js'
 import contactForms from './routes/contactsForm.routes.js' // Import contact form routes
+import jobsList from './routes/jobTrack.routes.js' // Import job tracking routes
 
 
 // Fix 1: Removed duplicate 'import cookieParser from 'cookie-parser''
@@ -46,6 +47,7 @@ app.use('/', authRoutes)
 app.use('/', educationRoutes)
 app.use('/', projectsRoutes)
 app.use('/', contactForms) // Add contact form routes
+app.use('/', jobsList) // Add job tracking routes
 
 
 // --- 4. Error Handling Middleware (MUST be last) ---

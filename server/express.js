@@ -11,7 +11,7 @@ import educationRoutes from './routes/education.routes.js'
 import projectsRoutes from './routes/project.routes.js'
 import contactForms from './routes/contactsForm.routes.js' // Import contact form routes
 import jobsList from './routes/jobTrack.routes.js' // Import job tracking routes
-
+import Testimonials from './routes/testimonial.routes.js' // Import testimonials routes
 
 // Fix 1: Removed duplicate 'import cookieParser from 'cookie-parser''
 // The import is handled above.
@@ -31,9 +31,9 @@ app.use(cookieParser()); // <--- CORRECT POSITION
 
 app.use(compress()) // Compression should run early
 app.use(helmet())   // Helmet should run early for security
-app.use(cors())     // CORS should run early
+app.use(cors())     // CORS should run early 
 
-// --- Removed Redundant Body-Parser Calls ---
+// --- Removed Redundant Body-dParser Calls ---s
 // The following lines were redundant and placed too late:
 // app.use(bodyParser.json())
 // app.use(bodyParser.urlencoded({ extended: true }))
@@ -48,6 +48,7 @@ app.use('/', educationRoutes)
 app.use('/', projectsRoutes)
 app.use('/', contactForms) // Add contact form routes
 app.use('/', jobsList) // Add job tracking routes
+app.use('/', Testimonials) // Add testimonials routes
 
 
 // --- 4. Error Handling Middleware (MUST be last) ---

@@ -8,7 +8,7 @@ import About from './src/about';
 import Contact from './src/contact';
 // 💡 Issue: Rename this for clarity (e.g., StaticEducationPage) if it's not the CRUD list
 import StaticEducationPage from './src/education'; 
-import Project from './src/project';
+import Project from './JobTrackerMain/Testimonials.jsx';
 import Layout from './components/Layout';
 import Services from './src/Services';
 import Home from './components/home';
@@ -20,6 +20,7 @@ import PrivateRoute from './lib/PrivateRoute';
 import EditProfile from './user/Profile-Menu/EditProfile.jsx';
 import NewContacts from './user/Contacts-Menu/NewContacts.jsx';
 import NewEducation from './user/Education-Menu/NewEducation.jsx';
+import Testimonials from './JobTrackerMain/Testimonials.jsx';
 
 // --- Job Tracker Imports ---
 import JobTrackerMain from './JobTrackerMain/Dashboard.jsx';
@@ -67,6 +68,7 @@ function MainRouter() {
           {/* AUTHENTICATED/PRIVATE ROUTES */}
           
               <Route path="dashboard" element={<PrivateRoute><JobTrackerMain /></PrivateRoute>} />
+              <Route path="testimonials" element={<Testimonials />} />
 
 
 

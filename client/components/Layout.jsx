@@ -19,6 +19,7 @@ export default function Layout() {
             <Link to="/contact" className="contact">Contact Me</Link>
             | <Link to="/services" className="services">Services</Link> |
             <Link to="/dashboard" className="dashboard">Dashboard</Link>
+            | <Link to="/testimonials" className="testimonials">Testimonials</Link>
            
 
           </nav>
